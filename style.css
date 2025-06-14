@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "Montserrat-Arabic-THIN";
+  src: url("./fonts/ArbFONTS-Montserrat-Arabic-Thin.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Arabic-MIDUIM";
+  src: url("./fonts/ArbFONTS-Montserrat-Arabic-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Arabic-LIGHT";
+  src: url("./fonts/ArbFONTS-Montserrat-Arabic-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Arabic-Regular";
+  src: url("./fonts/ArbFONTS-Montserrat-Arabic-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Arabic-Bold";
+  src: url("./fonts/ArbFONTS-Montserrat-Arabic-Bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat-Arabic-Regular";
+  background: #1f3f46;
+}
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  margin: auto;
+  max-width: 1170px;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  left: 260px;
+  top: 16px;
+  border-radius: 50%;
+  width: 63%;
+  height: 113vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(210, 176, 106, 0.6),
+    rgba(74, 90, 79, 0.8)
+  );
+  filter: blur(250px);
+  opacity: 0.6;
+  z-index: -2;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat-Arabic-Bold";
+  font-size: 34px;
+
+  justify-content: center;
+  flex-direction: column;
+}
+header .container .logo {
+  margin-bottom: 5rem;
+}
+header .container .header-text-big {
+  color: #ebc063;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+header .container .header-text-big img {
+  width: 58%;
+}
+header .container .header-text1,
+header .container .header-text2 {
+  font-family: "Montserrat-Arabic-LIGHT";
+  color: white;
+  opacity: 0.8;
+  max-width: 600px;
+  text-align: center;
+  font-size: 28px;
+}
+header .container .header-text1 {
+  margin-bottom: 3rem;
+}
+.orno {
+  max-width: 80%;
+}
+.buy-btn button {
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 61px;
+  background: linear-gradient(
+    to bottom,
+    #f79e1b 0%,
+    #c59224 48.44%,
+    #9c7011 100%
+  );
+  font-family: "Montserrat-Arabic-MIDUIM";
+  font-size: 32px;
+  color: white;
+  margin: 2rem;
+  cursor: pointer;
+}
+.arrow-btn {
+  max-width: 70px;
+}
+/* SECTION  */
+section {
+  margin-bottom: 5rem;
+}
+section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 20rem;
+  flex-direction: row-reverse;
+}
+section .container .check-text {
+  text-align: center;
+  color: white;
+}
+section .container .check-text .gold {
+  font-size: 36px;
+  border: 20px solid #f79e1b;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+section .container .check-text .classic {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 36px;
+}
+section .container .check-text .classic img {
+  width: 20%;
+}
+section .container2 {
+  color: white;
+  font-size: 33px;
+
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: "Montserrat-Arabic-LIGHT";
+}
+.gold-p {
+  font-weight: bold;
+  color: #f79e1b;
+  display: inline-grid;
+  font-family: "Montserrat-Arabic-Bold";
+}
+.gold-p img {
+  width: 100px;
+}
+/* FOOTER */
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+footer .container .div1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 2px solid #fff;
+  width: 42%;
+  border-radius: 20px;
+  height: 100%;
+  color: white;
+}
+.flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 32px;
+  gap: 0.5rem;
+  margin-top: -8rem;
+  margin-bottom: 4rem;
+}
+.del {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 28px;
+  line-height: 39px;
+  gap: 0.5rem;
+  color: #989898;
+}
+.para {
+  display: flex;
+  flex-direction: row-reverse;
+  color: #ffae00;
+  font-weight: 300;
+  gap: 0.5rem;
+  font-size: 34px;
+  margin-bottom: 3rem;
+}
+.w {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.cont {
+  margin-bottom: 2rem;
+}
+.green {
+  color: #64d171;
+  margin-bottom: 0.5rem;
+}
+footer .buy-btn button {
+  padding: 0.9rem 1rem;
+  font-size: 22px;
+}
+@media (max-width: 992px) {
+  .overlay {
+    left: 0;
+  }
+  .header-text-big {
+    font-size: 55px;
+  }
+  header .container .header-text1,
+  header .container .header-text2 {
+    font-size: 20px;
+  }
+  .buy-btn button {
+    padding: 0.8rem 0.8rem;
+    font-size: 24px;
+  }
+  .arrow-btn2 {
+    width: 100px;
+  }
+  section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  section .container .check-text .gold {
+    font-size: 20px;
+  }
+  section .container .check-text .classic {
+    font-size: 20px;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 576px) {
+  .header-text-big {
+    font-size: 38px;
+  }
+  header .container .header-text1,
+  header .container .header-text2 {
+    font-size: 24px;
+    font-family: "Montserrat-Arabic-light";
+  }
+  .arrow-btn {
+    max-width: 49px;
+  }
+  .arrow-btn2 {
+    transform: matrix(-0.9, -0.86, -0.96, 0.93, 1, 0);
+  }
+  section .container2 {
+    font-size: 25px;
+  }
+  footer .container {
+    gap: 3rem;
+  }
+  footer .container .div1 {
+    width: 90%;
+  }
+  .img1 {
+    width: 90%;
+  }
+}
+@media (min-width: 576px) {
+  /* Small Devices => Landscape Phones */
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  /* Medium Devices => Tablets */
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  /* Desktops */
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  /* Large Screens */
+  .container {
+    max-width: 1140px;
+  }
+}
